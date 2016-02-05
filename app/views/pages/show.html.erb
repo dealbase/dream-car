@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @page.amount %>
+</p>
+
+
+<% @cars_combination.each do |car| %>
+
+<%= car.name %> - 
+<%= car.amount %><br/>
+<% end %>
+<br/>
+<%= @money_left.inspect %>
